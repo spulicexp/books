@@ -11,4 +11,116 @@ Commands -
 8. git remote add spulic9_github https://github.com/
 9. git push spulic9_github
             git push --set-upstream spulic9_github master
-10. 
+10. git commit -m "message"
+11. git config --global user.name "spulicexp"
+12. $ git branch -M main
+
+    LENOVO@DESKTOP-EFCSQDS MINGW64 /c/spulickal/gitrepository/books_repo (main)
+    $ git remote add origin https://github.com/spulicexp/books.git
+
+    LENOVO@DESKTOP-EFCSQDS MINGW64 /c/spulickal/gitrepository/books_repo (main)
+    $ git push -u origin main
+    Enumerating objects: 3, done.
+    Counting objects: 100% (3/3), done.
+    Delta compression using up to 4 threads
+    Compressing objects: 100% (2/2), done.
+    Writing objects: 100% (3/3), 386 bytes | 128.00 KiB/s, done.
+    Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+    To https://github.com/spulicexp/books.git
+    * [new branch]      main -> main
+    Branch 'main' set up to track remote branch 'main' from 'origin'.
+
+13. $ git branch -a
+    * main
+    remotes/origin/main
+
+14. git push --set-upstream origin master
+
+15. git branch develop
+16. git checkout develop
+17. git push --set-stream origin develop
+18. $ git branch -a
+    * develop
+    main
+    master
+    remotes/origin/develop
+    remotes/origin/main
+    remotes/origin/master
+
+19. git branch --help
+    Requested help window will pop-up
+    file:///C:/Program%20Files/Git/mingw64/share/doc/git-doc/git-branch.html
+
+20. $ git branch -d main
+    Deleted branch main (was 266d94a).
+
+21. $ git push origin --delete main
+    To https://github.com/spulicexp/books.git
+    - [deleted]         main
+    (updated github to specify master has the default branch)
+
+22. git fetch
+
+23. git branch -r -l
+    listing remote branches only
+
+24. $ git status
+    On branch develop
+    Your branch is up to date with 'origin/develop'.
+
+    Changes not staged for commit:
+    (use "git add <file>..." to update what will be committed)
+    (use "git restore <file>..." to discard changes in working directory)
+            modified:   notes.txt
+
+    no changes added to commit (use "git add" and/or "git commit -a")
+
+    LENOVO@DESKTOP-EFCSQDS MINGW64 /c/spulickal/gitrepository/books_repo (develop)
+    $ git add -A
+
+    LENOVO@DESKTOP-EFCSQDS MINGW64 /c/spulickal/gitrepository/books_repo (develop)
+    $ git status
+    On branch develop
+    Your branch is up to date with 'origin/develop'.
+
+    Changes to be committed:
+    (use "git restore --staged <file>..." to unstage)
+            modified:   notes.txt
+
+
+    LENOVO@DESKTOP-EFCSQDS MINGW64 /c/spulickal/gitrepository/books_repo (develop)
+    $ git commit -m "notes updated"
+    [develop 28851dc] notes updated
+    1 file changed, 54 insertions(+), 1 deletion(-)
+
+    LENOVO@DESKTOP-EFCSQDS MINGW64 /c/spulickal/gitrepository/books_repo (develop)
+    $ git status
+    On branch develop
+    Your branch is ahead of 'origin/develop' by 1 commit.
+    (use "git push" to publish your local commits)
+
+    nothing to commit, working tree clean
+
+    LENOVO@DESKTOP-EFCSQDS MINGW64 /c/spulickal/gitrepository/books_repo (develop)
+    $ git push
+    Enumerating objects: 5, done.
+    Counting objects: 100% (5/5), done.
+    Delta compression using up to 4 threads
+    Compressing objects: 100% (2/2), done.
+    Writing objects: 100% (3/3), 1.00 KiB | 1.00 MiB/s, done.
+    Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+    To https://github.com/spulicexp/books.git
+    266d94a..28851dc  develop -> develop
+
+25. git checkout master
+        checkout aborted due to existing changes in the current local repository
+        git status 
+            will list the modified 20Files
+        git diff file name
+            will list the difference between most recent commit and current
+        git restore notes.txt
+            be careful with this command, as it will wipe the existing un-commited changes locally
+
+    checkout to a new branch fails locally
+
+26. 
