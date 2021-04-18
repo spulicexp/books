@@ -197,7 +197,7 @@ Commands -
         - merged the pull request - both commits are now merged into master
         - run the fetch command on master
         - git log ran before and after did't show the updates
-        - run a git pull command, this brought the remote master branch changes to local master
+        - run the git pull command, this brought the remote master branch changes to local master
 
 
 27. git commands to create a new branch locally and remotely
