@@ -1,0 +1,14 @@
+Commands -
+1. git init
+2. code .
+3. https://github.com/
+    spulicexp/D@20!
+    spulic9/D@21! sp547840@gmail.com
+4. git status
+5. git add -A
+6. git config -l
+7. git push -f --all
+8. git remote add spulic9_github https://github.com/
+9. git push spulic9_github
+            git push --set-upstream spulic9_github master
+10. 
