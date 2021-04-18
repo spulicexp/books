@@ -197,7 +197,11 @@ Commands -
         - merged the pull request - both commits are now merged into master
         - run the fetch command on master
         - git log ran before and after did't show the updates
-        - run git pull command, this brought the remote master branch changes to local master
+        - run a git pull command, this brought the remote master branch changes to local master
 
 
-27.
+27. git commands to create a new branch locally and remotely
+        $ git branch merge-conflict
+         git push --set-upstream origin merge-conflict
+
+28. creating a merge conflict
