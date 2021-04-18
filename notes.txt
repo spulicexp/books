@@ -200,4 +200,8 @@ Commands -
         - run the git pull command, this brought the remote master branch changes to local master
 
 
-27.
+27. git commands to create a new branch locally and remotely
+        $ git branch merge-conflict
+         git push --set-upstream origin merge-conflict
+
+28. creating a merge conflict
